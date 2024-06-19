@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ACD.MAUI.MainPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row ="0" Text="What would you like to do?" FontSize="Large" HorizontalTextAlignment ="Center"/>
+            
+            <Label Grid.Row="1"/>
+
+            <Button  Grid.Row="2"
+                Text="Manage Inventory"
+                 FontSize="Large"
+                 Scale="0.90"
+                 Clicked="InvClicked"/>
+
+            <Label Grid.Row="3"/>
+
+            <Button Grid.Row="4"
+                Text="Shop"
+                 FontSize="Large"
+                 Scale="0.90"
+                 Clicked="ShopClicked"/>
+
+            <Label Grid.Row="5"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
